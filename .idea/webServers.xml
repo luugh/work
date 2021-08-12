@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="adbd94d2-9be2-420c-8a3a-a778f09af114" name="8.203-py3.6" url="http://192.168.8.212">
+        <fileTransfer rootFolder="/home/auto_third_database" accessType="SFTP" host="192.168.8.212" port="22" sshConfigId="086d1e72-df02-4d14-8630-aacc75033e03" sshConfig="8.203-py3.6">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="4bd33838-c30e-44bd-be8c-34b234e79cf7" name="8.203-py2.7" url="http://192.168.8.203">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="192.168.8.212" port="22" sshConfigId="086d1e72-df02-4d14-8630-aacc75033e03" sshConfig="8.203-py3.6">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="a446acf4-03b9-41b2-a030-90d4f1143a12" name="8.212_SE" url="">
+        <fileTransfer accessType="SFTP" host="192.168.8.212" port="22" sshConfigId="086d1e72-df02-4d14-8630-aacc75033e03" sshConfig="8.203-py3.6">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="83626b8d-a9ce-4bde-a7c7-c11639a7c0b3" name="8.212_bestTV">
+        <fileTransfer rootFolder="/home/for_bestTV" accessType="SFTP" host="192.168.8.212" port="22" sshConfigId="086d1e72-df02-4d14-8630-aacc75033e03" sshConfig="8.203-py3.6">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="9bf8771f-79ea-4841-bb1c-6aeb39136409" name="8.212_africanews">
+        <fileTransfer accessType="SFTP" host="192.168.8.212" port="22" sshConfigId="8d7de215-9602-4bfa-8616-4b1a1ec5047a" sshConfig="root@192.168.8.212:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

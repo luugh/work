@@ -1,0 +1,26 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import os
+
+
+def get_ch():
+    ch_list = []
+    if os.path.exists('/mediadisk/hls/mdb/bestTV.txt'):
+        with open('/mediadisk/hls/mdb/bestTV.txt', 'r') as f:
+            for line in f.readlines():
+                if len(line.strip()) != 0:
+                    ch_list.append(line.strip())
+        # print(ch_list)
+        tv_list = ['{"{#CH_NAME}":"'+n+'"}' for n in ch_list]
+        # print(tv_list)
+        tv_ch = str(tv_list).replace("'", "")
+        json = '{"data":' + tv_ch + '}'
+        # print(json)
+        return json
+    else:
+        print('file not exists:/mediadisk/hls/mdb/bestTV.txt')
+
+
+if __name__ == '__main__':
+    get_ch()

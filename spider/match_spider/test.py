@@ -1,0 +1,1 @@
+from match_spider.spiders.bein_sports import bein_sportsSpider

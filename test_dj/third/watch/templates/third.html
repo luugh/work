@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>third</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <style>
+        #table_id_example{text-align: center}
+    </style>
+</head>
+<body>
+
+
+<table id="table_id_example" class="display">
+    <thead>
+        <tr>
+            <th>唯一标识</th>
+            <th>节目名称</th>
+            <th>流状态</th>
+            <th>cdn是否下发</th>
+            <th>列表状态</th>
+            <th>对接服务器</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        //console.log("12312312312");
+        $.ajaxSetup({
+            data: {'csrfmiddlewaretoken': '{{ csrf_token }}'}
+        })
+        let table = $('#table_id_example').DataTable({
+                'ajax': {
+                    processing: true,
+                    url: 'test_data/',
+                    type: 'GET',
+                    dataType : 'json',
+                    data: function (jsons) {
+                        return jsons
+                    }
+                },
+                'columns': [
+                    {'data': 'cp'},
+                    {'data': 'name'},
+                    {'data': 'stream'},
+                    {'data': 'cdn_s'},
+                    {'data': 'list_s'},
+                    {'data': 'cp_cdn'}
+                ]
+            }
+        );
+        /*setInterval(function () {
+            table.ajax.reload();
+        }, 600000)*/
+    });
+</script>
+
+
+
+
+</body>
+</html>

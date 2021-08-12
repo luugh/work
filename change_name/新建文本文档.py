@@ -33,6 +33,7 @@ class MyDb:
 
     def get_info(self, connect_db, name):
         # print(name)
+        # master
         cursor = connect_db.cursor()
         select_command = u"select hostIp from cdnChannel where channelMark='%s';" % name
         cursor.execute(select_command)

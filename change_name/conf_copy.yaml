@@ -1,0 +1,10 @@
+MyDb:
+  name: 'name'
+  passwd: 'passwd'
+  dbname: 'cmdb'
+  port: '3306'
+  host: 'xxx.xxx.xxx.xxx'
+
+SE:
+  login_name: "login"
+  password: "xxxxxx"

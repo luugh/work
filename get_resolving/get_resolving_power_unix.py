@@ -124,7 +124,7 @@ if __name__ == '__main__':
     lan = {}
     subtitle = {}
     tv_name, tv_info = get_ch()
-    # url = 'http://212.8.243.139:8082/TV52127'
+    # url = 'http://xxxxxx:8082/TV52127'
     nums = len(tv_name)
     n = 1
     for name in tv_name:

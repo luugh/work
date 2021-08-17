@@ -43,8 +43,6 @@ class Cms:
             list = f.readlines()
         name = list[0].strip()
         passwd = list[1].strip()
-        # name = 'admin'
-        # passwd = 'Q5t0wRLN'
         login_post = {
 
             "userName": name,

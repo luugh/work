@@ -96,7 +96,7 @@ if __name__ == '__main__':
     Encoder = {}
     lan = {}
     tv_name, tv_info = get_ch()
-    # url = 'http://212.8.243.139:8082/TV52127'
+    # url = 'http://x.x.x.x:8082/TV52127'
     for name in tv_name:
         print('正在获取'+name+'的分辨率').decode('')
         url = tv_info[name]
